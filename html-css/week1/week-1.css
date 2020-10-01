@@ -1,7 +1,8 @@
 body
 {
-  background-color: papayawhip;
+background:url(https://images.unsplash.com/photo-1519331379826-f10be5486c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80)repeat;
   font-family: serif;
+
 
 }
 *{
@@ -16,13 +17,16 @@ h2
 {color: steelblue;
 
 }
+p{
+  margin-left: 20px;
+}
 
 img{
 
   height:200px;
   border: 0px solid black;
   border-radius: 30%;
-  margin: 10px;
+  margin: 20px;
 
 }
 .contact{
@@ -42,9 +46,12 @@ border-radius: 30px;
 border-color: #494949;
 
 }
-div{
-  width: 70%;
-  margin:auto;
+
+.firstpart{
+  width: 80%;
+  background-color: papayawhip;
+  margin: 0 auto;
+  opacity: 0.9;
 }
 
 hr{
@@ -53,11 +60,19 @@ hr{
   border-color: grey;
   border-width: 5px;
 }
-ul{
-  list-style-position: inside;
+
+ul {
+list-style-type: circle;
+list-style-position: inside;
 }
+
+li {
+margin-left: 20px;
+}
+
 .second-section{
   margin-top: 20px;
+  margin-left: 20px;
 }
 .hobbies{
   margin-left: 100px;
@@ -92,9 +107,9 @@ hr{
 a{
   text-decoration: none;
 }
-
-
-
+.middletable{
+  margin-left: 10px;
+}
 table:last-of-type{
   width:70%;
   margin-bottom: 20px;
