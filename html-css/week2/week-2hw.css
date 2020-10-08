@@ -10,26 +10,27 @@ body{
   font: sans-serif,monospace;
 }
 .header-title{
-  height: 22vh;
+
   width: 100vw;
   background-color: #e6e6e6;
-  padding-top: 1vh;
+  padding: 70px 0;
 }
 .header-title h1{
-  margin:5vh 0 0 10vw;
+  margin:0 0 0 10vw;
 }
 .header-title p{
   margin: 1vh 0 0 10vw;
+  padding-bottom:0;
 }
  .find p, .find h3{
   margin-bottom: 1vh;
 }
 .menu ul{
+  padding: 20px;
   display: flex;
   flex-direction: row;
   list-style: none;
   justify-content: flex-start;
-  height: 8vh;
   margin-left: 10vw;
   align-items: center;
                      }
@@ -42,7 +43,6 @@ body{
   }
 .img-cls{
 width: 100vw;
-  height: 65vh;
               }
 .mainpart, .mainpart-2{
   margin:5vh 8vw 5vh 8vw;
@@ -89,14 +89,10 @@ width: 100vw;
 .last-part{
   display: flex;
   margin: 5vh 0;
-  padding-left: 8vw;
-  padding-top: 5vh;
   color: white;
   background-color: #695bcd;
   width: 100vw;
-  height: 80vh;
-
-
+  padding:20px 0 80px 20px;
 }
 .find{
   width: 25%;
@@ -106,7 +102,7 @@ width: 100vw;
 #map{
   width: 80%;
   height:200px;
-  margin: 2vh 0 1vh;
+  margin: 2vh 0 0 1vh;
 
 }
 .about{
@@ -137,11 +133,11 @@ width: 25%;}
   margin-bottom: 4vh;
 }
 
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 481px){
 .menu ul{
   flex-direction: column;
   align-items: flex-start;
-  height: 14vh;
+
 }
 .menu li{
   margin-bottom: 1vh;
