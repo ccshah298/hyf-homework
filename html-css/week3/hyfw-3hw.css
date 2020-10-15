@@ -1,0 +1,307 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+fieldset{
+  margin-top: 2%;
+}
+
+.my-site{
+  width:95%;
+  margin: 0 auto;
+}
+h1,h2,h3,p{
+  line-height: 2em;
+}
+.shippingchek{
+  font-size: 1.3em;
+  margin-left: 10%;
+  font-weight: bold;
+}
+.header{
+  display: flex;
+  justify-content: space-between;
+  flex-direction:row;
+}
+.header img{
+  width:12vw;
+  height: 12vw;
+}
+.navigation ul{
+  display: flex;
+ flex-direction: row;
+ list-style: none;
+}
+.navigation li{
+  padding: 20px;
+}
+.menubar ul{
+  display: flex;
+  justify-content:space-around;
+  list-style: none;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 20px;
+}
+a{
+  text-decoration: none;
+  color: grey;
+  font-size: 1em;
+}
+a:hover{
+  color: black;
+}
+.progress-bar{
+    flex: 100%;
+    border: 1px solid;
+}
+.progress-part1{
+    height: 3em;
+    background-color:gray;
+    width: 25%;
+    animation: p1 2s;
+    }
+    .progress-part2{
+    height: 3em;
+    background-color:gray;
+    width: 50%;
+    animation: p2 2s;
+}
+.progress-part3{
+    height: 3em;
+    background-color:gray;
+    width: 75%;
+    animation: p3 2s;
+}
+.progress-part4{
+    height: 3em;
+    border-right: solid 1px;
+    background-color:gray;
+    width: 100%;
+    animation: p4 2s;
+}
+@keyframes p1 {
+    0% {
+      width: 0%;
+    }
+    100% {
+      width: 25%;
+    }
+  }
+  @keyframes p2 {
+    0% {
+      width: 25%;
+    }
+    100% {
+      width: 50%;
+    }
+  }
+  @keyframes p3 {
+    0% {
+      width: 50%;
+    }
+    100% {
+      width: 75%;
+    }
+  }
+  @keyframes p4 {
+    0% {
+      width: 75%;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+/* form1 start */
+
+.personal-inf, .mail-adress, .payment{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top:20px;
+}
+
+.form1
+{
+  width: 48%;
+  margin: 1% 1%;
+}
+
+.form1 label{
+  font-weight: bold;
+  font-size: 1.3em;
+  width: 35%;
+
+}
+.country-opt, .card-opt{
+  width: 60%;
+  padding: 15px;
+  margin: 0;
+}
+.label-left{
+  text-align:right;
+}
+
+
+.form1 input{
+  width: 60%;
+  padding: 15px;
+
+}
+.form1-description{
+  display: flex;
+  justify-content: flex-start;
+  margin: 2.5% 1%;
+
+}
+.form1-description label{
+margin-left: 5%;
+  width:15%;
+text-align: right;
+display: inline-block;
+padding: 15px;
+}
+.form1-description input{
+  width: 70%;
+  padding: 70px;
+  margin-left: 3px;
+}
+.profile-dsp{
+  font-weight: bold;
+  font-size: 1.3em;
+}
+input.check-box
+  {
+  width: 4vw;
+  height: 4vh;
+  margin-left: 20px;
+  margin-top: 7px;
+}
+
+
+/*use this chec-box class in part-3 checkbox and part-1 checkbox*/
+.hidden
+{
+  margin: 0;
+  padding: 0;
+  display:inherit;
+}
+
+.check-box:checked ~ .hidden{
+    display: none;
+  }
+
+ input.button{
+  width: 200px;
+  padding: 30px;
+  font-weight: bold;
+  font-size:20px;
+  float: right;
+  margin:10px 20px;
+}
+
+  /* for part-2 html */
+
+.newslatter-parent {
+    display: flex;
+    margin: 30px 80px;
+    font-size: 1.3em;
+    font-weight: bold;
+  }
+
+.newslatter {
+  display: flex;
+  margin: 0 2vw;
+}
+.newslatter input{
+  margin:5px 20px;
+}
+
+/* for part-3.html  */
+.choice{display: flex;
+ width: 48%;
+flex-wrap: wrap;
+margin: 20px 30px;
+line-height: 3em;
+}
+
+ .choice label{
+font-weight: bold;
+font-size:1.3em;
+width: 35%;
+text-align:right;
+
+}
+
+
+.selection1, .selection2{
+display:flex;
+justify-content: space-around;
+flex-wrap: wrap;
+margin-bottom: 40px;
+margin-top: 10px;
+}
+.img1{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  width: 20%;
+  height:20%;
+}
+.img1 img{
+  width: 100%;
+  height: 100%;
+}
+.img1 label{
+font-weight: bold;
+font-size: 1.3em;
+line-height: 2em;
+}
+
+
+/* for part-4.html */
+.card-data {
+  display: flex;
+   width: 48%;
+ flex-wrap: wrap;
+ margin: 20px 30px;
+ line-height: 3em;
+}
+.card-data input{
+  width: 11%;
+  padding: 10px;
+}
+.card-data label{
+  font-weight: bold;
+  font-size: 1.3em;
+  width: 35%;
+  text-align:right;
+}
+/* use this for part-3 and 4 in checkbox part */
+
+.data-lt{
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 700px){
+  .my-site{
+    font-size: 0.7em;
+  }
+.newslatter-parent,.choice{
+  flex-direction: column;
+  justify-content: center;
+}
+.img1{
+  width: 45%;
+  height: 45%;
+}
+.form1 input{
+  width:50%;
+}
+.label-left input{
+  width:20%;
+}
+.card-data{
+  line-height: 1.5em;
+}

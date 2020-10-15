@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>part-1</title>
+    <link rel="stylesheet" href="hyfw-3hw.css">
+  </head>
+  <body>
+    <div class="my-site">
+    <div class="header">
+  <img src="https://image.shutterstock.com/image-vector/best-seller-gold-sign-laurel-600w-1272404569.jpg" alt="bestseller">
+
+   <nav class="navigation">
+  <ul>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Children</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="menubar">
+  <ul>
+    <li><a href="#">Clothes</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Sales</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#">Offers</a></li>
+  </ul>
+</div>
+<h1>Sign up for Bestseller</h1>
+    <p>we can't wait to help you improve your life style and gain attention from people around you.</p>
+<h2>Step 1/4 tell us who are you?</h2>
+<h3>progress</h3>
+   <div class="progress-bar">
+     <div class=progress-part1> </div>
+   </div>
+    <p>Nice to meet you.Let's spend a minute to get to know each other?Please enter the following:</p>
+<!--common for all html pages-->
+<form class="" action="hyfw-3hwpart-2.html" method="GET">
+     <fieldset>
+      <div class="personal-inf">
+          <div class="form1 label-left">
+          <label for="first-name">First name<span>&#42;</span></label>
+          <input id="first-name" type="text" name="first-name" required >
+     </div>
+    <div class="form1">
+       <label for="last-name">Last name<span>&#42;</span></label>
+       <input id="last-name" type="text" name="last-name" required>
+    </div>
+    <div class="form1 label-left">
+       <label for="country">Country<span>&#42;</span></label>
+      <select class="country-opt" name="country-option" id="country-option" required>
+      <option value=""></option>
+      <option value="denmark">Denmark</option>
+      <option value="germany">Germany</option>
+      <option value="sweden">Sweden</option>
+      <option value="norway">Norway</option>
+     </select>
+  </div>
+  <div class="form1"></div>
+   <div class="form1 label-left">
+      <label for="street-adress">Street Adress<span>&#42;</span></label>
+      <input id="street-adress" type="text" name="street-adress" required>
+   </div>
+   <div class="form1">
+       <label for="post-code">Post-Code<span>&#42;</span></label>
+       <input id="post-code" type="text" name="post-code" required pattern="\d*" minlength="4" maxlength="4" placeholder="Postcode" title="Four digit zip code">
+   </div>
+   </div>
+
+
+       <p> Use the same adress for billing and shipping? uncheck to fill out a seperete shipping adress.</p>
+
+
+      <label for="shipping-adress"><span class="shippingchek">Shipping adress</span></label>
+      <input type="checkbox" class="check-box" name="shipping-adress" checked>
+      <div class="hidden">
+        <span class="shippingchek"> Shipping Adress</span>
+        <div class="personal-inf">
+            <div class="form1 label-left">
+            <label for="first-name">First name<span>&#42;</span></label>
+            <input id="first-name2" type="text" name="first-name" required value=" ">
+        </div>
+        <div class="form1">
+         <label for="last-name">Last name<span>&#42;</span></label>
+         <input id="last-name" type="text" name="last-name" required value=" ">
+        </div>
+        <div class="form1 label-left">
+         <label for="country">Country<span>&#42;</span></label>
+        <select class="country-opt" name="country-option" id="country-option" required>
+        <option value=" " selected></option>
+        <option value="denmark">Denmark</option>
+        <option value="germany">Germany</option>
+        <option value="sweden">Sweden</option>
+        <option value="norway">Norway</option>
+        </select>
+        </div>
+        <div class="form1"></div>
+        <div class="form1 label-left">
+        <label for="street-adress">Street Adress<span>&#42;</span></label>
+        <input id="street-adress" type="text" name="street-adress" required value=" ">
+        </div>
+        <div class="form1">
+         <label for="post-code">Post-Code<span>&#42;</span></label>
+         <input id="post-code" type="text" name="post-code" required pattern="\d*" minlength="4" maxlength="4" placeholder="Postcode" title="Four digit zip code" value="9999">
+        </div>
+        </div>
+       </div>
+
+    <div class="form1-description">
+    <label for="profile-description"><span class="profile-dsp">Profile-description</span> please provide short description about yourself to be displaed in our social media comunity
+    </label>
+    <input id="profile-description"type="text" name="profile-description" required maxlength="500">
+    </div>
+
+<input type="submit" class="button" name="" value="Next Step">
+
+</fieldset>
+    </form>
+</div>
+  </body>
+</html>

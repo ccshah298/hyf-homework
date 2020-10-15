@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>part-4</title>
+    <link rel="stylesheet" href="hyfw-3hw.css">
+  </head>
+  <body>
+    <div class="my-site">
+    <div class="header">
+  <img src="https://image.shutterstock.com/image-vector/best-seller-gold-sign-laurel-600w-1272404569.jpg" alt="bestseller">
+
+   <nav class="navigation">
+  <ul>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Children</a></li>
+  </ul>
+</nav>
+</div>
+
+<div class="menubar">
+  <ul>
+    <li><a href="#">Clothes</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Sales</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#">Offers</a></li>
+  </ul>
+</div>
+<h1>Sign up for Bestseller</h1>
+<h2>Step 4/4 Payment</h2>
+<h3>progress</h3>
+<div class="progress-bar">
+  <div class=progress-part4> </div>
+</div>
+    <p>Please fill in your payment data</p>
+<!--common for all html pages-->
+<form class="" action="hyfw-3hwpart-1.html" method="GET">
+      <fieldset>
+      <div class="payment">
+          <div class="form1 label-left">
+          <label for="nameon-card">Name on card</label>
+          <input id="nameon-card" type="text" name="nameon-card" required >
+     </div>
+    <div class="form1">
+    </div>
+    <div class="form1 label-left">
+       <label for="cardtype">Card type</label>
+      <select class="card-opt" name="card-option" id="card-option" required>
+      <option value=""></option>
+      <option value="master-card">Master Card</option>
+      <option value="visa">Visa</option>
+      <option value="amex">Amex</option>
+      <option value="jcb">Jcb</option>
+     </select>
+  </div>
+  <div class="form1"></div>
+   <div class="form1 label-left">
+      <label for="cradit-cardnumber">Cradit card number</label>
+      <input id="cradit-cardnumber" type="tel" name="cradit-cardnumber" required pattern="\d{16}" maxlength="16" placeholder="Card Number">
+   </div>
+   <div class="form1">
+       <label for="first-Name">First Name</label>
+       <input id="first-Name"type="text" name="first-Name" required>
+   </div>
+   </div>
+   <div class="card-data">
+        <label for="expiry-month">Expiry month</label>
+        <input id="expiry-month" type="number" name="expiry-month" required>
+        <label for="expiry-year">Expiry year</label>
+        <input id="expiry-year" type="number" name="expiry-year" required>
+        <label class="data-lt" for="ccv">CCV</label>
+        <!--<input  class="data-lt" id="ccv" type="number" name="ccv" required pattern="\d{3}" maxlength="3"> -->
+        <input  class="data-lt" id="ccv" type="tel" name="ccv" pattern="[0-9]{3}" required maxlength="3">
+       </div>
+       <input type="submit" class="button" name="" value="End">
+     </fieldset>
+      </form>
+    </div>
+  </body>
+</html>

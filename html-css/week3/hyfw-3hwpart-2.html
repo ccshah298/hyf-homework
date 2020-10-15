@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>part-2</title>
+    <link rel="stylesheet" href="hyfw-3hw.css">
+  </head>
+  <body>
+    <div class="my-site">
+    <div class="header">
+    <img src="https://image.shutterstock.com/image-vector/best-seller-gold-sign-laurel-600w-1272404569.jpg" alt="bestseller">
+
+    <nav class="navigation">
+    <ul>
+    <li><a href="#">Women</a></li>
+    <li><a href="#">Men</a></li>
+    <li><a href="#">Children</a></li>
+    </ul>
+    </nav>
+    </div>
+
+    <div class="menubar">
+    <ul>
+    <li><a href="#">Clothes</a></li>
+    <li><a href="#">Accessories</a></li>
+    <li><a href="#">Sales</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="#">Brands</a></li>
+    <li><a href="#">Offers</a></li>
+    </ul>
+    </div>
+    <h1>Sign up for Bestseller</h1>
+    <h2>Step 2/4 how can we reach you?</h2>
+    <h3>progress</h3>
+    <div class="progress-bar">
+      <div class=progress-part2> </div>
+    </div>
+    <p>We will probably to stay in touch somhow. Let is know how we can reach you?</p>
+    <!--common for all html pages-->
+    <form class="" action="hyfw-3hwpart-3.html" method="GET">
+         <fieldset>
+          <div class="mail-adress">
+              <div class="form1 label-left">
+              <label for="email">Email<span>&#42;</span></label>
+              <input id="email" type="email" name="email" required placeholder="xyz@example.com" >
+         </div>
+        <div class="form1">
+           <label for="phone">Phone</label>
+           <input id="phone" type="tel" name="phone">
+        </div>
+        <div class="form1 label-left">
+           <label for="password">Password<span>&#42;</span></label>
+           <input id="password" type="password" name="password" required minlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters">
+      </div>
+      <div class="form1"></div>
+       <div class="form1 label-left">
+          <label for="re-enter-password">Re-enter Password<span>&#42;</span></label>
+          <input id="re-enter-password" type="password" name="re-enter-password" required minlength="10" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 10 or more characters">
+       </div>
+       <div class="form1">
+       </div>
+       </div>
+       <p>I want to sign up for the news latter.</p>
+<div class="newslatter-parent">
+       <div class="newslatter">
+         <label for="weeklynews" class='radio-label'>Weeklynews</label>
+         <input id="weeklynews" name="weeklynews" type='radio'value="weeklynews" checked>
+      </div>
+
+      <div class="newslatter">
+       <label for="monthlynews" class='radio-label'>Monthlynews</label>
+       <input id="monthlynews" name="monthlynews" type='radio'value="monthlynews">
+     </div>
+
+     <div class="newslatter">
+       <label for="dont-sendme-news" class='radio-label'>Dont sendme news</label>
+       <input id="dont-sendme-news" name="dont-sendme-news" type='radio'value="dont-sendme-news">
+    </div>
+  </div>
+       <input type="submit" class="button" name="" value="Next Step">
+     </fieldset>
+   </form>
+ </div>
+  </body>
+</html>
