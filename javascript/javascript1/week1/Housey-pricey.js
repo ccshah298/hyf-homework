@@ -7,8 +7,11 @@ const jHouseCost = 1000000;
 jHousePrice = jVolumeInMeters * 2.5 * 1000 + jGardenSizeInM2 * 300
 //console.log(' Julia house price ' + jHousePrice)
 let jHousey;
-if(jHouseCost >= jHousePrice){
+if(jHouseCost > jHousePrice){
     jHousey = 'Julia is Paying more';
+}
+else if(jHouseCost=jHousePrice){
+    jHousey='Julia is paying right amount';
 }
 else{
     jHousey = 'Julia is not paying more';
@@ -28,6 +31,9 @@ pHousePrice = pVolumeInMeters * 2.5 * 1000 + pGardenSizeInM2 * 300
 let pHousey;
 if(pHouseCost >= pHousePrice){
     pHousey = 'peter is Paying more';
+}
+else if(pHouseCost=pHousePrice){
+    pHousey='Julia is paying right amount';
 }
 else{
     pHousey = 'peter is not paying more';
