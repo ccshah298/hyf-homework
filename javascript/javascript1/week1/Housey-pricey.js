@@ -10,7 +10,7 @@ let jHousey;
 if(jHouseCost > jHousePrice){
     jHousey = 'Julia is Paying more';
 }
-else if(jHouseCost=jHousePrice){
+else if(jHouseCost==jHousePrice){
     jHousey='Julia is paying right amount';
 }
 else{
@@ -32,7 +32,7 @@ let pHousey;
 if(pHouseCost >= pHousePrice){
     pHousey = 'peter is Paying more';
 }
-else if(pHouseCost=pHousePrice){
+else if(pHouseCost==pHousePrice){
     pHousey='Julia is paying right amount';
 }
 else{
