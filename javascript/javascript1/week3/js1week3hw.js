@@ -10,11 +10,11 @@ const names = [
     "katrine",
     "Tala",
   ];
-  const nameToRemove = "Ahmad";
+  /*const nameToRemove = "Ahmad";
   names.splice(1,1)//find the position of Ahmad in index=1 & ,1= 0nly remove one Ahmed
-  console.log (names); // ['Peter', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala']
+  console.log (names); // ['Peter', 'Yana', 'kristina', 'Rasmus', 'Samuel', 'katrine', 'Tala']----->changes done*/
 
-  /*or this way
+  
 const nameToRemove = "Ahmad";
 for (let i = 0; i < names.length; i++) {
     if (names[i] === nameToRemove) {
@@ -22,7 +22,7 @@ for (let i = 0; i < names.length; i++) {
         break;
     }
 }
-console.log(names);*/
+console.log(names);
 
 
   //Ex-When will we be there??
@@ -96,7 +96,8 @@ console.log(notes);
 // Get a note
 function getNote(id) {
   for(i=0;i<notes.length;i++){
-    if(id === isNaN() && content === 'string' ){
+    //if(id === isNaN() && content === 'string' ){-----> changes done
+      if(id === isNaN()){
       return 'you enterd valid formate'
     }
     else if(id === (notes[i].id)){
