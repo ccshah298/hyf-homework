@@ -1,47 +1,52 @@
 //Write a function that finds the shortest word of an array of words ex---
 const danishWords = ["bil", "plante", "kaffe", "bog", "ø", "planetarium"];
-const lengthOfArray = danishWords.length;
-let firstValue = danishWords[0];
-let shortestWord;
 function shortestWords(danishWords) {
-  for (let i = 0; i < lengthOfArray; i++) {
-    let arraysIndexLen = danishWords[i].length;
-    if (arraysIndexLen <= firstValue.length) {
-      shortestWord = danishWords[i];
-    }
+let shortValue = danishWords[0];
+   for(const shortWord of danishWords){
+     if(shortValue.length > shortWord.length){
+       shortValue = shortWord;
+     }
+   }
+   return shortValue
   }
-  return shortestWord;
-}
 console.log("Shortest word from string array = "+ shortestWords(danishWords));
 
 
 ////Find the individual number and the total number of Danish letters in a string. ex---
 const danishString = "Jeg har en blå bil";
-const danishString2 = "Blå grød med røde bær";
+//const danishString2 = "Blå grød med røde bær";
+const danishString2 = "Bl grød med røde br";
+
+function individualChar(danishString) {
 let count = 0;
 let countå = 0;
 let countø = 0;
 let countæ = 0;
-function individualChar(danishString) {
+let output = new Object();
   for (let i = 0; i < danishString.length; i++) {
-    let stringsIndex = danishString[i];
-    if (stringsIndex.includes("å")) {
+    const stringsIndex = danishString[i];
+    if (stringsIndex === "å") {
       count++;
       countå++;
-    } else if (stringsIndex.includes("ø")) {
+      output.å = countå;
+
+    } else if (stringsIndex === "ø") {
       count++;
       countø++;
-    } else if (stringsIndex.includes("æ")) {
+      output.ø = countø;
+    } else if (stringsIndex === "æ") {
       count++;
       countæ++;
+      output.æ = countæ;
     }
 }
-let output = {
+output.total = count;
+/*const output = {
   total: count,
   å: countå,
   ø: countø,
   æ: countæ,
-};
+}; */
 return output;
 }
 
@@ -49,11 +54,11 @@ console.log(individualChar(danishString2));
 
 
   //Spirit animal name generator ex---
-  let body = document.querySelector("body");
-  let myInput = document.getElementById("name");
+  const body = document.querySelector("body");
+  const myInput = document.getElementById("name");
   const hoverOption = document.getElementById("hover-option");
   const buttonOption = document.getElementById("button-option");
-    let myButton = document.getElementById("spiritButton");
+    const myButton = document.getElementById("spiritButton");
   buttonOption.addEventListener("change", function() {  
     myInput.removeEventListener("mouseover",EventCall);    
     if (buttonOption.checked){
@@ -68,7 +73,7 @@ console.log(individualChar(danishString2));
     }
   });
  function EventCall() {
-      let spiritAnimalString = [
+      const spiritAnimalString = [
         "Flying Butterfly",
         "Owl",
         "Frogs",
@@ -78,8 +83,8 @@ console.log(individualChar(danishString2));
         "Crow",
         "Swans"
       ];
-      let random = Math.floor(Math.random() * spiritAnimalString.length);
-      let divElement = document.createElement("div");
+      const random = Math.floor(Math.random() * spiritAnimalString.length);
+      const divElement = document.createElement("div");
       body.appendChild(divElement);
     
       if (myInput.value === "") {

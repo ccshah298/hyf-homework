@@ -12,14 +12,12 @@ function renderProducts(products) {
         const h2Tag = document.createElement("h2");
         h2Tag.innerHTML = product.name;
         liList.appendChild(h2Tag);
-        const spanTag = document.createElement("span");
-        spanTag.innerHTML = `price: ${product.price}`;
-        liList.appendChild(spanTag);
-        const brTag = document.createElement("br");
-        liList.appendChild(brTag);
-        const spanTag2 = document.createElement("span");
-        spanTag2.innerHTML = `Rating: ${product.rating}`;
-        liList.appendChild(spanTag2);
+        const divTag = document.createElement("div");
+        divTag.innerHTML = `price: ${product.price}`;
+        liList.appendChild(divTag);
+        const divTag2 = document.createElement("div");
+        divTag2.innerHTML = `Rating: ${product.rating}`;
+        liList.appendChild(divTag2);
     }
 }
 
