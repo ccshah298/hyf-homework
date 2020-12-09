@@ -7,28 +7,7 @@ let lCountWin = document.getElementById("lcountWinner");
 let restartButton = document.getElementById("restart");
 let sCount = 0;
 let lCount = 0;
-
-/*
-document.addEventListener("keydown", function (event) {
-    if (timeDuration.value > 0) {
-    if(event.code === "KeyL"){
-        lCount++;
-        lCountNumber.innerHTML = lCount;
-        lCountWin.innerHTML = ""; 
-        sCountWin.innerHTML = "";
-    }
-    if(event.code === "KeyS"){
-        sCount++;
-        sCountNumber.innerHTML = sCount;
-        lCountWin.innerHTML = ""; 
-        sCountWin.innerHTML = "";
-    }
-}
-},true);
-*/
-
 document.addEventListener("keydown", keyCount);
-
 function keyCount(event)
  {
     if (timeDuration.value > 0) {
@@ -81,8 +60,6 @@ gameForm.addEventListener("click",(event)=>{
                   
           }
 });
-
-
 restartButton.addEventListener("click", (restartTheGame) =>{
     document.location.href = "";
 });
