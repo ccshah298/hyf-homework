@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fastest.css">
+    <title>The fastest presser in this realm game</title>
+   
+</head>
+<body>
+    <h1 class="centered">Fastest Presser</h1>
+    <form class="centered" >
+      <input type="number" placeholder="Set seconds" id="duration" value=0>
+      <button id="game-start-form" type="button">Start game</button>
+    </form>
+    <div class="container">
+        <div class="s-clicker centered">
+          <div>Press S</div>
+          <p id="scount"></p>
+          <p id="scountWinner"></p>
+        </div>
+        <div class="l-clicker centered">
+          <div>Press L</div>
+          <p id="lcount"></p>
+          <p id="lcountWinner"></p>
+        </div>
+      </div>
+      <div class="lastButton"><button id="restart" disabled>Restart</button></div>  
+      <script src="fastest.js"></script>
+</body>
+</html>
