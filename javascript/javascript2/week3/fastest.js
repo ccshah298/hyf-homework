@@ -44,9 +44,13 @@ gameForm.addEventListener("click",(event)=>{
                     clearInterval(id);
                     if (sCount>lCount){
                        sCountWin.innerHTML = "Winner";
+                       confettiS = new ConfettiGenerator({ target: 'confettiS', width: 600, height: 100 });
+                       confettiS.render();
                     }
                     else if (sCount<lCount){
                         lCountWin.innerHTML = "Winner";
+                        confettiL = new ConfettiGenerator({ target: 'confettiL', width: 600, height: 100 });
+                        confettiL.render();
                     }
                     else{
                         sCountWin.innerHTML = "Tie";
