@@ -1,0 +1,65 @@
+[
+    {
+        "band": "maroon-5",
+        "album": [{
+            "title":"Songs About Jane",
+            "Released":"June 25",
+            "year": 2002
+        },
+    {
+        "title":"It Won't Be Soon Before Long",
+        "Released":"May 22",
+        "year":2007
+    },
+{
+    "title":"Hand All Over",
+    "Released":"Septmber 21",
+    "year":2010
+}],
+"type":"American pop rock"
+       },
+
+       {
+           "band":"The beach boys",
+           "album":[{
+               "title":"surfer girl",
+               "Released":"may 20",
+               "year":1963
+           },
+        {
+            "title":"All summer long",
+            "Released":"June 30",
+            "year":1964
+        }],
+        "type":"American rock"
+       },
+       
+       {
+           "band":"A band of boys",
+           "album":[{
+               "title":"Gori",
+               "Released":"january 3",
+               "year":2002
+           },
+        {
+            "title":"Teri Neend",
+            "Released":"February 25",
+            "year":2002
+        },
+    {
+        "title":"Chhori",
+        "Released":"March 20",
+        "year":2019
+    },
+{
+    "title":"She drives me crazy",
+    "Released":"February 5",
+    "year":2002
+},
+{
+    "title":"Jo dil chahe",
+    "year":2004
+}],
+"type":"Indian rock"
+       }
+]
