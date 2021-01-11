@@ -23,17 +23,21 @@ moviefunction();
 function result_delay(resolveAfter) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      resolve(console.log("I´m async response"));
+      //resolve(console.log("I´m async response"));
+resolve()
     }, resolveAfter * 1000);
   });
 }
 //When you have written the promise, use it with async/await
 async function getMessage() {
-  try {
+  /*try {
     const message = await result_delay(8);
   } catch (error) {
     alert(error);
-  }
+  }*/
+  await result_delay(8);
+    console.log("I´m async response");
+
 }
 getMessage();
 
