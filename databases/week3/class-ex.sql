@@ -50,3 +50,46 @@ alter table Comment add ( reaction_id int(10),
 
 
 
+INSERT INTO User (	id , 
+					username , 
+					Email , 
+                    password , 
+                    Regdate Datetime, 
+                    );
+            VALUES(
+                1,
+                'Charmi Shah',
+                'ccshah29@gmail.com',
+                'sssssl',
+                '27-01-2021 9:00:00',
+            );
+INSERT INTO   Post ( id ,
+					title ,
+					when_created,
+					when_updated, 
+                    User_id 
+                   );                 
+             VALUES(
+                 1,
+                 'Beautiful Picture Gallary',
+                 '27-01-2021 9:00:00',
+                 '27-01-2021 9:10:00',
+                 101
+             );
+INSERT INTO   Comment (	id ,
+						Content ,
+						when_created ,
+                        when_Updated ,
+                        User_id ,
+                        Post_id ,
+                        parent_comment_id ); 
+                VALUES(
+                    1,
+                    'beautiful',
+                    '27-01-2021 9:00:00',
+                    '27-01-2021 9:00:00',
+                    101,
+                    1,
+                    201
+                );
+                                         
