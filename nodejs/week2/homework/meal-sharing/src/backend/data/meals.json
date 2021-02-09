@@ -1,0 +1,27 @@
+[
+    {
+        "id" : 1,
+        "title" : "Indian food in the summer",
+        "maxNumberOfGuests" : 5,
+        "description" : "A nice night out eating delicious indian food",
+        "createdAt" : "2021/12/1 14:34",
+        "price" : 67
+    },
+    {
+        "id" : 2,
+        "title" : "Thai food in the winter",
+        "maxNumberOfGuests" : 10,
+        "description" : "A nice night out eating thai food",
+        "createdAt" : "2021/13/1 15:40",
+        "price" : 180.00
+    },
+
+    {
+        "id" : 3,
+        "title" : "South indian food in the spring",
+        "maxNumberOfGuests" : 4,
+        "description" : "A nice night out eating south indian food",
+        "createdAt" : "2021/14/1 15:05",
+        "price" : 100.00
+    }
+]
