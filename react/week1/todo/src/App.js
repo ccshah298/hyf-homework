@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ToDoList from './ToDoList';
 import ToDoItem from './ToDoItem';
 const toDoThing = [
   { description: "get out of bed", deadline: "wed sep 13 2017" },
@@ -9,9 +10,7 @@ const toDoThing = [
 function App() {
   return (
     <div className="App">
-   <h2>
-     To do list
-   </h2>
+   <ToDoList/>
       <ul>
           {toDoThing.map(todo => <ToDoItem description={todo.description} deadline={todo.deadline} />)}
       </ul>
