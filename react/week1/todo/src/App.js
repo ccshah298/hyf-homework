@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import ToDoList from './ToDoList';
+import Title from './Title';
 import ToDoItem from './ToDoItem';
-const toDoThing = [
+const toDoList = [
   { description: "get out of bed", deadline: "wed sep 13 2017" },
   { description: "Brush Teeth", deadline: "Thu sep 13 2017" },
   { description: "Eat breakfast", deadline: "wed sep 13 2017" },
@@ -10,9 +10,9 @@ const toDoThing = [
 function App() {
   return (
     <div className="App">
-   <ToDoList/>
+   <Title/>
       <ul>
-          {toDoThing.map(todo => <ToDoItem description={todo.description} deadline={todo.deadline} />)}
+          {toDoList.map(todo => <ToDoItem description={todo.description} deadline={todo.deadline} />)}
       </ul>
     </div>
   );
