@@ -13,7 +13,7 @@ function ToDoList(){
     const handleDescriptionChange = (event) => {
         setDescriptionNew(event.target.value);
       };
-      const handleDeadlineChange = (event) => {
+      const handleDeadlineChange = (input) => {
         setDeadlineNew(toDate(input)
         //setDeadlineNew(event.target.value)
         );
