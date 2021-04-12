@@ -1,7 +1,5 @@
 Tomato
 Potato
-Coconut
+Onion
 Peas
 Carrot
-corn
-cabbage
